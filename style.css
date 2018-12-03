@@ -1,0 +1,60 @@
+body {
+    margin: 20px;
+    background-color: black;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    transform-style: preserve-3d;
+    background-color: lightslategray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 14rem;
+}
+.selected {
+    transform: rotateY(180deg);
+}
+.match {
+    background-color: lightslategray;
+    display: none;
+}
+.border {
+    border: 6px solid black;
+}
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url("pictures/bat.png");
+    background-color: lightslategray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    height: 9.7rem;
+    width: 13.7rem;
+}
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: lightslategray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 9rem;
+    width: 13rem;
+}
+.btn {
+    margin-top: 3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 4.5rem;
+    width: 50%;
+    height: 5rem;
+    width: 100%;
+}
+.btn:hover {
+    color: silver;
+}
